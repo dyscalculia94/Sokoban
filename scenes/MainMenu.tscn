@@ -4,7 +4,7 @@
 [ext_resource path="res://assets/main_menu/logo.png" type="Texture" id=2]
 [ext_resource path="res://assets/main_menu/label_new_game.png" type="Texture" id=3]
 
-[node name="MarginContainer" type="MarginContainer"]
+[node name="MainMenu" type="MarginContainer"]
 anchor_right = 1.0
 anchor_bottom = 1.0
 margin_top = 1.22774
