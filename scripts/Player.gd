@@ -2,6 +2,8 @@ extends Area2D
 
 var prev_position
 
+var crate_block_class = load("res://scenes/CrateBlock.tscn")
+
 func _ready():
 	pass
 
@@ -31,4 +33,18 @@ func _input(event):
 			position = prev_position
 
 func _on_Player_area_entered(area):
-	return_to_prev()
+	match area.get_area_type():
+		"CRATE":
+			if (area.get_returned()):
+				area.reset_returned()
+				return_to_prev()
+			else:
+				area.move(position - prev_position)
+			print("CRATE BLOCK")
+		"WALL":
+			print("WALL BLOCK")
+		_:
+			print("UNKNOWN BLOCK")
+
+func get_area_type():
+	return "PLAYER"
