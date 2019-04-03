@@ -1,10 +1,11 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://assets/ground/ground_06.png" type="Texture" id=1]
 [ext_resource path="res://scripts/Level1.gd" type="Script" id=2]
-[ext_resource path="res://scenes/Player.tscn" type="PackedScene" id=3]
-[ext_resource path="res://scenes/CrateBlock.tscn" type="PackedScene" id=4]
-[ext_resource path="res://scenes/WallBlock.tscn" type="PackedScene" id=5]
+[ext_resource path="res://scenes/CrateDest.tscn" type="PackedScene" id=3]
+[ext_resource path="res://scenes/Player.tscn" type="PackedScene" id=4]
+[ext_resource path="res://scenes/CrateBlock.tscn" type="PackedScene" id=5]
+[ext_resource path="res://scenes/WallBlock.tscn" type="PackedScene" id=6]
 
 [node name="Level1" type="TextureRect"]
 anchor_right = 1.0
@@ -13,11 +14,14 @@ texture = ExtResource( 1 )
 stretch_mode = 2
 script = ExtResource( 2 )
 
-[node name="Player" parent="." instance=ExtResource( 3 )]
+[node name="CrateDest" parent="." instance=ExtResource( 3 )]
+position = Vector2( 128, 192 )
 
-[node name="CrateBlock" parent="." instance=ExtResource( 4 )]
+[node name="Player" parent="." instance=ExtResource( 4 )]
+
+[node name="CrateBlock" parent="." instance=ExtResource( 5 )]
 position = Vector2( 128, 0 )
 
-[node name="WallBlock" parent="." instance=ExtResource( 5 )]
+[node name="WallBlock" parent="." instance=ExtResource( 6 )]
 position = Vector2( 128, 64 )
 
