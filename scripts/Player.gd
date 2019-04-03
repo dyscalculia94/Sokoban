@@ -1,17 +1,9 @@
 extends Area2D
 
-# Declare member variables here. Examples:
-# var a = 2
-# var b = "text"
 var prev_position
 
-# Called when the node enters the scene tree for the first time.
 func _ready():
 	pass
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-#func _process(delta):
-#	pass
 
 func return_to_prev():
 	position = prev_position
@@ -40,4 +32,3 @@ func _input(event):
 
 func _on_Player_area_entered(area):
 	return_to_prev()
-#	print("ENTERED PLAYER")

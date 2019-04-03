@@ -1,21 +1,20 @@
 extends Node
 
-# Declare member variables here. Examples:
-# var a = 2
-# var b = "text"
-
 var level1 = load("res://scenes/Level1.tscn")
+var current_level
 
-# Called when the node enters the scene tree for the first time.
 func _ready():
 	$MainMenu/VBoxContainer/HBoxContainer/NewGame.connect("gui_input", self, "_on_NewGame_gui_input")
 
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-#func _process(delta):
-#	pass
+func _level_finished():
+	print("LEVEL_FINISHED")
+	current_level.queue_free()
+	$MainMenu.visible = true
 
 func _on_NewGame_gui_input(event):
 	if event is InputEventMouseButton and event.pressed:
 		print("HELLO")
 		$MainMenu.visible = false
-		add_child(level1.instance())
+		current_level = level1.instance()
+		add_child(current_level)
+		current_level.connect("level_finished", self, "_level_finished")
