@@ -16,6 +16,7 @@ func _input(event):
 		else:
 			var dir = get_position_vec(event)
 			if (yield(can_move(dir), "completed") == true) and (dir != Vector2(0, 0)):
+				get_parent().moves_num += 1
 				prev_position = position
 				position += dir
 #				print("PLAYER MOVED")
