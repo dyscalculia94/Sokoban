@@ -14,20 +14,162 @@ texture = ExtResource( 1 )
 stretch_mode = 2
 script = ExtResource( 2 )
 
-[node name="CrateDest" parent="." instance=ExtResource( 3 )]
-position = Vector2( 128, 192 )
+[node name="CrateDests" type="Node2D" parent="."]
+editor/display_folded = true
 
-[node name="CrateDest2" parent="." instance=ExtResource( 3 )]
-position = Vector2( 192, 192 )
+[node name="CrateDest" parent="CrateDests" instance=ExtResource( 3 )]
+position = Vector2( 320, 128 )
 
-[node name="CrateBlock" parent="." instance=ExtResource( 4 )]
-position = Vector2( 128, 256 )
+[node name="CrateDest2" parent="CrateDests" instance=ExtResource( 3 )]
+position = Vector2( 320, 256 )
 
-[node name="CrateBlock2" parent="." instance=ExtResource( 4 )]
-position = Vector2( 192, 256 )
+[node name="CrateDest3" parent="CrateDests" instance=ExtResource( 3 )]
+position = Vector2( 576, 192 )
 
-[node name="WallBlock" parent="." instance=ExtResource( 5 )]
-position = Vector2( 128, 64 )
+[node name="CrateDest4" parent="CrateDests" instance=ExtResource( 3 )]
+position = Vector2( 512, 320 )
+
+[node name="CrateDest5" parent="CrateDests" instance=ExtResource( 3 )]
+position = Vector2( 512, 448 )
+
+[node name="CrateDest6" parent="CrateDests" instance=ExtResource( 3 )]
+position = Vector2( 640, 384 )
+
+[node name="CrateDest7" parent="CrateDests" instance=ExtResource( 3 )]
+position = Vector2( 448, 384 )
+
+[node name="Crates" type="Node2D" parent="."]
+editor/display_folded = true
+
+[node name="CrateBlock" parent="Crates" instance=ExtResource( 4 )]
+position = Vector2( 448, 128 )
+
+[node name="CrateBlock2" parent="Crates" instance=ExtResource( 4 )]
+position = Vector2( 512, 192 )
+
+[node name="CrateBlock3" parent="Crates" instance=ExtResource( 4 )]
+position = Vector2( 512, 256 )
+
+[node name="CrateBlock4" parent="Crates" instance=ExtResource( 4 )]
+position = Vector2( 448, 384 )
+
+[node name="CrateBlock5" parent="Crates" instance=ExtResource( 4 )]
+position = Vector2( 512, 384 )
+
+[node name="CrateBlock6" parent="Crates" instance=ExtResource( 4 )]
+position = Vector2( 576, 384 )
+
+[node name="CrateBlock7" parent="Crates" instance=ExtResource( 4 )]
+position = Vector2( 320, 384 )
+
+[node name="Walls" type="Node2D" parent="."]
+editor/display_folded = true
+
+[node name="WallBlock" parent="Walls" instance=ExtResource( 5 )]
+position = Vector2( 384, 64 )
+
+[node name="WallBlock2" parent="Walls" instance=ExtResource( 5 )]
+position = Vector2( 320, 64 )
+
+[node name="WallBlock3" parent="Walls" instance=ExtResource( 5 )]
+position = Vector2( 256, 64 )
+
+[node name="WallBlock4" parent="Walls" instance=ExtResource( 5 )]
+position = Vector2( 256, 128 )
+
+[node name="WallBlock5" parent="Walls" instance=ExtResource( 5 )]
+position = Vector2( 256, 192 )
+
+[node name="WallBlock6" parent="Walls" instance=ExtResource( 5 )]
+position = Vector2( 256, 256 )
+
+[node name="WallBlock7" parent="Walls" instance=ExtResource( 5 )]
+position = Vector2( 256, 320 )
+
+[node name="WallBlock8" parent="Walls" instance=ExtResource( 5 )]
+position = Vector2( 256, 384 )
+
+[node name="WallBlock9" parent="Walls" instance=ExtResource( 5 )]
+position = Vector2( 256, 448 )
+
+[node name="WallBlock10" parent="Walls" instance=ExtResource( 5 )]
+position = Vector2( 256, 512 )
+
+[node name="WallBlock11" parent="Walls" instance=ExtResource( 5 )]
+position = Vector2( 320, 512 )
+
+[node name="WallBlock12" parent="Walls" instance=ExtResource( 5 )]
+position = Vector2( 384, 512 )
+
+[node name="WallBlock13" parent="Walls" instance=ExtResource( 5 )]
+position = Vector2( 448, 512 )
+
+[node name="WallBlock14" parent="Walls" instance=ExtResource( 5 )]
+position = Vector2( 512, 512 )
+
+[node name="WallBlock15" parent="Walls" instance=ExtResource( 5 )]
+position = Vector2( 576, 512 )
+
+[node name="WallBlock16" parent="Walls" instance=ExtResource( 5 )]
+position = Vector2( 640, 512 )
+
+[node name="WallBlock17" parent="Walls" instance=ExtResource( 5 )]
+position = Vector2( 704, 512 )
+
+[node name="WallBlock18" parent="Walls" instance=ExtResource( 5 )]
+position = Vector2( 704, 448 )
+
+[node name="WallBlock19" parent="Walls" instance=ExtResource( 5 )]
+position = Vector2( 704, 320 )
+
+[node name="WallBlock21" parent="Walls" instance=ExtResource( 5 )]
+position = Vector2( 640, 320 )
+
+[node name="WallBlock22" parent="Walls" instance=ExtResource( 5 )]
+position = Vector2( 640, 256 )
+
+[node name="WallBlock23" parent="Walls" instance=ExtResource( 5 )]
+position = Vector2( 640, 192 )
+
+[node name="WallBlock24" parent="Walls" instance=ExtResource( 5 )]
+position = Vector2( 640, 128 )
+
+[node name="WallBlock25" parent="Walls" instance=ExtResource( 5 )]
+position = Vector2( 640, 64 )
+
+[node name="WallBlock26" parent="Walls" instance=ExtResource( 5 )]
+position = Vector2( 640, 0 )
+
+[node name="WallBlock27" parent="Walls" instance=ExtResource( 5 )]
+position = Vector2( 576, 0 )
+
+[node name="WallBlock28" parent="Walls" instance=ExtResource( 5 )]
+position = Vector2( 512, 0 )
+
+[node name="WallBlock29" parent="Walls" instance=ExtResource( 5 )]
+position = Vector2( 448, 0 )
+
+[node name="WallBlock30" parent="Walls" instance=ExtResource( 5 )]
+position = Vector2( 384, 0 )
+
+[node name="WallBlock31" parent="Walls" instance=ExtResource( 5 )]
+position = Vector2( 320, 192 )
+
+[node name="WallBlock32" parent="Walls" instance=ExtResource( 5 )]
+position = Vector2( 384, 192 )
+
+[node name="WallBlock33" parent="Walls" instance=ExtResource( 5 )]
+position = Vector2( 384, 256 )
+
+[node name="WallBlock34" parent="Walls" instance=ExtResource( 5 )]
+position = Vector2( 384, 320 )
+
+[node name="WallBlock35" parent="Walls" instance=ExtResource( 5 )]
+position = Vector2( 448, 256 )
+
+[node name="WallBlock20" parent="Walls" instance=ExtResource( 5 )]
+position = Vector2( 704, 384 )
 
 [node name="Player" parent="." instance=ExtResource( 6 )]
+position = Vector2( 384, 128 )
 
