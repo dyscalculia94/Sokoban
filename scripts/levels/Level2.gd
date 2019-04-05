@@ -16,7 +16,6 @@ func _ready():
 
 func _process(delta):
 	if running and crates_num == 0:
-		print("THE END!")
 		print("Total number of moves: " + str(moves_num))
 		running = false
 		var lfs = LevelFinishedScreen.instance()
