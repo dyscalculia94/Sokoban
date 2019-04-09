@@ -5,7 +5,7 @@ var cur_level
 var cur_level_num = 0
 
 func _ready():
-	$MainMenu/VBoxContainer/HBoxContainer/NewGame.connect("gui_input", self, "_on_NewGame_gui_input")
+	$MainMenu/MarginContainer/VBoxContainer/HBoxContainer/NewGame.connect("gui_input", self, "_on_NewGame_gui_input")
 	load_levels()
 
 func _level_finished():

@@ -1,4 +1,4 @@
-extends MarginContainer
+extends TextureRect
 
 func _ready():
 	pass
